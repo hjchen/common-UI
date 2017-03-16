@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>公共样式模块</title>
+<link rel="stylesheet" href="css/jquery.snippet.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/publicUnits.css">
+<link rel="stylesheet" href="css/common.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+html,body {
+    padding: 5px;
+}
+.prompt {
+    padding: 10px 20px;
+    background-color: #e5e5e5;
+    margin: 10px 0;
+}
+.model {
+    width: 100%;
+    padding: 20px;
+    border: 3px solid #ddd;
+    margin-bottom: 10px;
+}
+.model-title {
+    font-weight: bold;
+    height: 40px;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.model-title button {
+    float: right;
+    margin-bottom: 10px;
+}
+.model-content {
+    padding: 20px 0 10px 0;
+}
+.model-code {
+    margin: 16px 0 22px;
+    display: none;
+}
+.model1 button {
+    margin: 5px;
+}
+</style>
+</head>
+<body>
+<h1>教育培训产品（PC端）“公共样式模块” V1.1.0</h1>
+<div class="prompt">
+    <p>【使用说明】</p>
+<p>（1）为保证前端开发和后台开发的简易型，并保持项目样式风格统一，请尽量能用本项目公共样式模块，复用本模块。</p>
+<p>（2）本模块需要引用normalize.css（默认样式初始化）、publicUnits.css（通用组件样式）、common.css（公共样式）三个样式表和jquery-1.12.3.min.js（jquery）、publicUnits.js（组件js）两个js文件，以及对应目录的images图片文件。</p>
+<p>（3）具体使用过程中，请重新建立css样式表根据实际项目页面设计，对样式（如长度、高度、颜色等）做出相应调整样式覆盖。</p>
+<p>（4）显示高亮代码是对应上面模块的html代码，使用时直接引用上述css、js、images，放入相应模块的代码，再根据设计稿调整即可。</p>
+</div>
+<div class="model model1">
+    <div class="model-title">布局包装器<button class="btn-green show-code">显示模块代码</button></div>
+    <div class="model-content">
+        <p>（1）.main-warrper：屏幕大于990px，显示990px;小于990px，以全屏98%显示</p>
+        <p>（2）.full-warrper：100%</p>
+        <p>（3）.half-warrper：50%</p>
+        <p>（4）.three-warrper：33.3333333%</p>
+    </div>
+    <pre class="model-code code-type-html">
+        <div class="main-warrper"></div>
+        <div class="full-warrper"></div>
+        <div class="half-warrper"></div>
+        <div class="three-warrper"></div></pre>
+</div>
+<div class="model model1">
+    <div class="model-title">公用模块一：各种按钮<button class="btn-green show-code">显示模块代码</button></div>
+    <div class="model-content">
+        <!-- 样式开始 -->
+        <button>button按钮标签样式</button>
+        <button class="btn">按钮btn</button>
+        <button class="btn-white">白色按钮btn-white</button>
+        <button class="btn-blue">蓝色按钮btn-white</button>
+        <button class="btn-gray">灰色按钮btn-gray</button>
+        <button class="btn-green">绿色按钮btn-green</button>
+        <button class="btn-red">红色按钮btn-red</button>
+        <button class="btn-sub">提交按钮btn-sub</button>
+        <button class="btn-reset">重置按钮btn-reset</button>
+        <button class="btn-modify">修改按钮btn-modify</button>
+        <button class="btn-add">新增按钮btn-add</button>
+        <button class="btn-delete">删除按钮btn-delete</button>
+        <button class="btn-edit">编辑按钮btn-edit</button>
+        <button class="btn-seek">搜索按钮btn-seek</button>
+        <button class="btn-void">无效按钮btn-void</button>
+        <button class="btn-file">文件按钮btn-file</button>
+        <button class="btn-nopost">不发布按钮btn-nopost</button>
+        <button class="btn-post">发布按钮btn-post</button>
+        <button class="btn-import">导入按钮btn-import</button>
+        <button class="btn-export">导出按钮btn-export</button>
+        <button class="btn-preview">预览按钮btn-preview</button>
+        <button class="btn-signup">退出按钮btn-signup</button>
+        <button class="btn-keep">保存按钮btn-makecode</button>
+        <button class="btn-makecode">生成二维码按钮btn-makecode</button>
+        <button class="btn-card">证件按钮btn-card</button>
+        <button class="btn-doc">文档按钮btn-doc</button>
+        <button class="btn-refresh">重置刷新btn-refresh</button>
+        <button class="btn-fit">维护btn-fit</button>
+        <button class="btn-rote">角色btn-rote</button>
+        <button class="btn-range">范围btn-range</button>
+        <button class="btn-increase">添加问卷btn-increase</button>
+        <button class="btn-eyes">预览2btn-eyes</button>
+        <button class="btn-uppic">上传图片btn-uppic</button>
+        <!-- 样式结束 -->
+        <pre class="model-code code-type-html">
+            <button>button按钮标签样式</button>
+            <button class="btn">按钮btn</button>
+            <button class="btn-white">白色按钮btn-white</button>
+            <button class="btn-blue">蓝色按钮btn-white</button>
+            <button class="btn-gray">灰色按钮btn-gray</button>
+            <button class="btn-green">绿色按钮btn-green</button>
+            <button class="btn-red">红色按钮btn-red</button>
+            <button class="btn-sub">提交按钮btn-sub</button>
+            <button class="btn-reset">重置按钮btn-reset</button>
+            <button class="btn-modify">修改按钮btn-modify</button>
+            <button class="btn-add">新增按钮btn-add</button>
+            <button class="btn-delete">删除按钮btn-delete</button>
+            <button class="btn-edit">编辑按钮btn-edit</button>
+            <button class="btn-seek">搜索按钮btn-seek</button>
+            <button class="btn-void">无效按钮btn-void</button>
+            <button class="btn-file">文件按钮btn-file</button>
+            <button class="btn-nopost">不发布按钮btn-nopost</button>
+            <button class="btn-post">发布按钮btn-post</button>
+            <button class="btn-import">导入按钮btn-import</button>
+            <button class="btn-export">导出按钮btn-export</button>
+            <button class="btn-preview">预览按钮btn-preview</button>
+            <button class="btn-signup">退出按钮btn-signup</button>
+            <button class="btn-keep">保存按钮btn-makecode</button>
+            <button class="btn-makecode">生成二维码按钮btn-makecode</button>
+            <button class="btn-card">证件按钮btn-card</button>
+            <button class="btn-doc">文档按钮btn-doc</button>
+            <button class="btn-refresh">重置刷新btn-refresh</button>
+            <button class="btn-fit">维护btn-fit</button>
+            <button class="btn-rote">角色btn-rote</button>
+            <button class="btn-range">范围btn-range</button>
+            <button class="btn-increase">添加问卷btn-increase</button>
+            <button class="btn-eyes">预览2btn-eyes</button>
+            <button class="btn-uppic">上传图片btn-uppic</button></pre>
+    </div>
+</div>
+<div class="model model2">
+    <div class="model-title">公用模块二：共用搜索<button class="btn-green show-code">显示模块代码</button></div>
+    <div class="model-content">
+        <!-- 样式开始 -->
+        <div class="search-block">
+            <div class="search">
+                <div class="search-input">
+                    <input type="text" placeholder="试题名称">
+                </div>
+                <input type="submit" value="搜索" class="btn-sub">
+            </div>
+        </div>
+        <!-- 样式结束 -->
+        <pre class="model-code code-type-html">
+            <div class="search-block">
+                <div class="search">
+                    <div class="search-input">
+                        <input type="text" placeholder="试题名称">
+                    </div>
+                    <input type="submit" value="搜索" class="btn-sub">
+                </div>
+            </div></pre>
+    </div>
+</div>
+<div class="model model3">
+    <div class="model-title">公用模块三：共用模块包装布局<button class="btn-green show-code">显示模块代码</button></div>
+    <div class="model-content">
+        <!-- 样式开始 -->
+        <div class="box-block">
+            <div class="box-title">
+                <span>这里是标题</span>
+                <div class="box-btn">
+                    <button>这边可有可无</button>
+                    <button class="btn-add">按钮样式</button>
+                    <button class="btn-makecode">按钮样式</button>
+                </div>
+            </div>
+            <div class="box-content">
+                具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容具体内容
+            </div>
+        </div>
+        <!-- 样式结束 -->
+        <pre class="model-code code-type-html">
+            <div class="box-block">
+                <div class="box-title">
+                    <span>这里是标题</span>
+                    <div class="box-btn">
+                        <button>这边可有可无</button>
+                        <button class="btn-add">按钮样式</button>
+                        <button class="btn-makecode">按钮样式</button>
+                    </div>
+                </div>
+                <div class="box-content">
+                    具体内容具体内容具体内容具体内容具体内容
+                </div>
+            </div></pre>
+    </div>
+</div>
+<div class="model model4">
+    <div class="model-title">公用模块四：公共条件表单label+表单元素布局<button class="btn-green show-code">显示模块代码</button></div>
+    <div class="model-content">
+        <!-- 样式开始 -->
+        <div class="input-list">
+            <div class="label-text">
+                <label for="">单行输入框</label>
+            </div>
+            <div class="input-text">
+                <input type="text">
+            </div>
+        </div>
+        <!-- 样式结束 -->
+        <pre class="model-code code-type-html">
+            //单行输入框
+            <div class="input-list">
+                <div class="label-text">
+                    <label for="">单行输入框</label>
+                </div>
+                <div class="input-text">
+                    <input type="text">
+                </div>
+            </div></pre>
+        <!-- 样式开始 -->
+        <div class="input-list">
+            <div class="label-text">
+                <label for="">下拉选择框</label>
+            </div>
+            <div class="input-text">
+                <select name="" id="">
+                    <option value="">广东广州单位</option>
+                    <option value="">广东深圳单位</option>
+                    <option value="">广东珠海单位</option>
+                    <option value="">广东汕头单位</option>
+                </select>
+            </div>
+        </div>
+        <!-- 样式结束 -->
+        <pre class="model-code code-type-html">
+            //下拉选择框
+            <div class="input-list">
+                <div class="label-text">
+                    <label for="">下拉选择框</label>
+                </div>
+                <div class="input-text">
+                    <select name="" id="">
+                        <option value="">广东广州单位</option>
+                        <option value="">广东深圳单位</option>
+                        <option value="">广东珠海单位</option>
+                        <option value="">广东汕头单位</option>
+                    </select>
+                </div>
+            </div></pre>
+        <!-- 样式开始 -->
+        <div class="input-list">
+            <div class="label-text">
+                <label for="">单选按钮</label>
+            </div>
+            <div class="input-text">
+                <span>男</span><input type="radio" name="gender">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>女</span><input type="radio" name="gender">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <!-- 样式结束 -->
+        <pre class="model-code code-type-html">
+            //单选按钮
+            <div class="input-list">
+                <div class="label-text">
+                    <label for="">单选按钮</label>
+                </div>
+                <div class="input-text">
+                    <span>男</span><input type="radio" name="gender">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>女</span><input type="radio" name="gender">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div></pre>
+        <!-- 样式开始 -->
+        <div class="input-list">
+            <div class="label-text">
+                <label for="">多选按钮</label>
+            </div>
+            <div class="input-text">
+                <span>单线选择题</span><input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>多项选择题</span><input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>不定项选择题</span><input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <!-- 样式结束 -->
+        <pre class="model-code code-type-html">
+            //多选按钮
+            <div class="input-list">
+                <div class="label-text">
+                    <label for="">多选按钮</label>
+                </div>
+                <div class="input-text">
+                    <span>单线选择题</span><input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>多项选择题</span><input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>不定项选择题</span><input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div></pre>
+    </div>
+</div>
+<div class="model model5">
+    <div class="model-title">公用模块五：公共条件查询过滤模块（左边表单元素、右边按钮模式）<button class="btn-green show-code">显示模块代码</button></div>
+    <div class="model-content">
+        <!-- 样式开始 -->
+        <div class="box-filter">
+            <div class="filter-left">
+                <div class="input-list three-warrper">
+                    <div class="label-text">
+                        <label for="">试题类别</label>
+                    </div>
+                    <div class="input-text">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="input-list three-warrper">
+                    <div class="label-text">
+                        <label for="">所属单位</label>
+                    </div>
+                    <div class="input-text">
+                        <select name="" id="">
+                            <option value="">广东广州单位</option>
+                            <option value="">广东深圳单位</option>
+                            <option value="">广东珠海单位</option>
+                            <option value="">广东汕头单位</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-list three-warrper">
+                    <div class="label-text">
+                        <label for="">所属范围</label>
+                    </div>
+                    <div class="input-text">
+                        <select name="" id="">
+                            <option value="">电力设备</option>
+                            <option value="">电力维护</option>
+                            <option value="">电网知识</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-right">
+                <button class="btn-blue">搜索</button>
+            </div>
+        </div>
+        <!-- 样式结束 -->
+        <pre class="model-code code-type-html">
+            <div class="box-filter">
+                <div class="filter-left">
+                    /******* 左边内容区域 *********/
+                </div>
+                <div class="filter-right">
+                    <button class="btn-blue">搜索</button>
+                </div>
+            </div></pre>
+    </div>
+</div>
+<div class="model model6">
+    <div class="model-title">公用模块六：公共表单【含日历】模块（上部表单、下部按钮模形）<button class="btn-green show-code">显示模块代码</button></div>
+    <div class="model-content">
+        <div class="prompt">
+            <p>【说明】表单一行具体放几列元素，可通过栅格化（即百分比）形式确定</p>
+        </div>
+        <!-- 样式开始 -->
+        <div class="entry-form">
+            <div class="entry-top">
+                <div class="entry-list">
+                    <div class="input-list three-warrper">
+                        <div class="label-text">
+                            <label for="">试题类别</label>
+                        </div>
+                        <div class="input-text">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="input-list three-warrper">
+                        <div class="label-text">
+                            <label for="">所属单位</label>
+                        </div>
+                        <div class="input-text">
+                            <select name="" id="">
+                                <option value="">广东广州单位</option>
+                                <option value="">广东深圳单位</option>
+                                <option value="">广东珠海单位</option>
+                                <option value="">广东汕头单位</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-list three-warrper">
+                        <div class="label-text">
+                            <label for="">选择日期</label>
+                        </div>
+                        <div class="input-text">
+                            <input type="text" class="date-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="entry-list">
+                    <div class="input-list three-warrper">
+                        <div class="label-text">
+                            <label for="">试题类别</label>
+                        </div>
+                        <div class="input-text">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="input-list three-warrper">
+                        <div class="label-text">
+                            <label for="">所属单位</label>
+                        </div>
+                        <div class="input-text">
+                            <select name="" id="">
+                                <option value="">广东广州单位</option>
+                                <option value="">广东深圳单位</option>
+                                <option value="">广东珠海单位</option>
+                                <option value="">广东汕头单位</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-list three-warrper">
+                        <div class="label-text">
+                            <label for="">所属范围</label>
+                        </div>
+                        <div class="input-text">
+                            <select name="" id="">
+                                <option value="">电力设备</option>
+                                <option value="">电力维护</option>
+                                <option value="">电网知识</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="entry-list">
+                    <div class="input-list">
+                        <div class="label-text">
+                            <label for="">试题内容</label>
+                        </div>
+                        <div class="input-text">
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="entry-bottom">
+                <button class="btn">取消</button>
+                <button class="btn-sub">保存</button>
+            </div>
+        </div>
+        <!-- 样式结束 -->
+        <pre class="model-code code-type-html">
+            <div class="entry-form">
+                <div class="entry-top">
+                    <div class="entry-list">
+                        /******* 第一行内容区域 *********/
+                        /******* 选择日期input *********/
+                        <div class="input-list three-warrper">
+                            <div class="label-text">
+                                <label for="">选择日期</label>
+                            </div>
+                            <div class="input-text">
+                                <input type="text" class="date-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entry-list">
+                        /******* 第二行内容区域 *********/
+                    </div>
+                    <div class="entry-list">
+                        /******* 第三行内容区域 *********/
+                    </div>
+                </div>
+                <div class="entry-bottom">
+                    <button class="btn">取消</button>
+                    <button class="btn-sub">保存</button>
+                </div>
+            </div></pre>
+    </div>
+</div>
+<div class="model model7">
+    <div class="model-title">公用模块七：公共表格模块（包含编辑、预览、取消等）<button class="btn-green show-code">显示模块代码</button></div>
+    <div class="model-content">
+        <!-- 样式开始 -->
+        <table class="repeat-table">
+            <tr>
+                <th>
+                    <input type="checkbox" class="all">
+                </th>
+                <th>教材名称</th>
+                <th>教材形式</th>
+                <th>学习时长</th>
+                <th>附件大小</th>
+                <th>关联课程数</th>
+                <th>教材编码</th>
+                <th>教材URL</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>
+                    <span>全国推进依法治国(上)</span>
+                </td>
+                <td>
+                    <span>标准电子课件</span>
+                </td>
+                <td>
+                    <span>66分钟</span>
+                </td>
+                <td>
+                    <span>30MB</span>
+                </td>
+                <td>
+                    <span>5</span>
+                </td>
+                <td>
+                    <span>01-88289101</span>
+                </td>
+                <td>
+                    <span>http://10.121.13.20/nwpp</span>
+                </td>
+                <td class="do-work">
+                    <a href="javascript:;" class="do-blue">编辑</a>
+                    <a href="javascript:;" class="do-gray">取消</a>
+                    <a href="javascript:;" class="do-blue">预览</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>
+                    <span>全国推进依法治国(上)</span>
+                </td>
+                <td>
+                    <span>标准电子课件</span>
+                </td>
+                <td>
+                    <span>66分钟</span>
+                </td>
+                <td>
+                    <span>30MB</span>
+                </td>
+                <td>
+                    <span>5</span>
+                </td>
+                <td>
+                    <span>01-88289101</span>
+                </td>
+                <td>
+                    <span>http://10.121.13.20/nwpp</span>
+                </td>
+                <td class="do-work">
+                    <a href="javascript:;" class="do-blue">编辑</a>
+                    <a href="javascript:;" class="do-gray">取消</a>
+                    <a href="javascript:;" class="do-blue">预览</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>
+                    <span>全国推进依法治国(上)</span>
+                </td>
+                <td>
+                    <span>标准电子课件</span>
+                </td>
+                <td>
+                    <span>66分钟</span>
+                </td>
+                <td>
+                    <span>30MB</span>
+                </td>
+                <td>
+                    <span>5</span>
+                </td>
+                <td>
+                    <span>01-88289101</span>
+                </td>
+                <td>
+                    <span>http://10.121.13.20/nwpp</span>
+                </td>
+                <td class="do-work">
+                    <a href="javascript:;" class="do-blue">编辑</a>
+                    <a href="javascript:;" class="do-gray">取消</a>
+                    <a href="javascript:;" class="do-blue">预览</a>
+                </td>
+            </tr>
+        </table>
+        <!-- 样式结束 -->
+        <pre class="model-code code-type-html">
+            <table class="repeat-table">
+                <tr>
+                    <th>
+                        <input type="checkbox" class="all">
+                    </th>
+                    <th>教材名称</th>
+                    <th>教材形式</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <span>全国推进依法治国(上)</span>
+                    </td>
+                    <td>
+                        <span>标准电子课件</span>
+                    </td>
+                    <td class="do-work">
+                        <a href="javascript:;" class="do-blue">编辑</a>
+                        <a href="javascript:;" class="do-gray">取消</a>
+                        <a href="javascript:;" class="do-blue">预览</a>
+                    </td>
+                </tr>
+            </table></pre>
+    </div>
+</div>
+<div class="model model8">
+    <div class="model-title">公用模块八：共用面包屑导航模块<button class="btn-green show-code">显示模块代码</button></div>
+    <div class="model-content">
+        <!-- 样式开始 -->
+        <div class="crumbs">我的位置：
+            <a href="javascript:;" target="_blank">首页</a>
+            <em>&gt;</em>
+            <a href="javascript:;" target="_blank">XXX专题</a>
+            <em>&gt;</em>
+            <span>资讯列表</span>
+        </div>
+        <!-- 样式结束 -->
+        <pre class="model-code code-type-html">
+            <div class="crumbs">我的位置：
+                <a href="javascript:;" target="_blank">首页</a>
+                <em>&gt;</em>
+                <a href="javascript:;" target="_blank">XXX专题</a>
+                <em>&gt;</em>
+                <span>资讯列表</span>
+            </div></pre>
+    </div>
+</div>
+<div class="model model9">
+    <div class="model-title">公用模块九：公共分页（一）模块<button class="btn-green show-code">显示模块代码</button></div>
+    <div class="model-content">
+        <!-- 样式开始 -->
+        <div class="page">
+            <div class="public-page-2">
+                <div class="list-prompt">
+                    每页<span>15</span>条
+                    &nbsp;&nbsp;
+                    共12345678条
+                </div>
+                <div class="page-block">
+                    <span class="page-list page-left">上一页</span>
+                    <span class="page-list cur">1</span>
+                    <span class="page-list">...</span>
+                    <span class="page-list">9</span>
+                    <span class="page-list">10</span>
+                    <span class="page-list">11</span>
+                    <span class="page-list">12</span>
+                    <span class="page-list">13</span>
+                    <span class="page-list">...</span>
+                    <span class="page-list">32233</span>
+                    <span class="page-list page-right">下一页</span>
+                </div>
+                <div class="pago-prompt">
+                    第<input type="text">页
+                    <button>跳转</button>
+                    <span>共32233页</span>
+                </div>
+            </div>
+        </div>
+        <!-- 样式结束 -->
+        <pre class="model-code code-type-html">
+            <div class="page">
+                <div class="public-page-2">
+                    <div class="list-prompt">
+                        每页<span>15</span>条
+                        &nbsp;&nbsp;
+                        共12345678条
+                    </div>
+                    <div class="page-block">
+                        <span class="page-list page-left">上一页</span>
+                        <span class="page-list cur">1</span>
+                        <span class="page-list">...</span>
+                        <span class="page-list">9</span>
+                        <span class="page-list">10</span>
+                        <span class="page-list">11</span>
+                        <span class="page-list">12</span>
+                        <span class="page-list">13</span>
+                        <span class="page-list">...</span>
+                        <span class="page-list">32233</span>
+                        <span class="page-list page-right">下一页</span>
+                    </div>
+                    <div class="pago-prompt">
+                        第<input type="text">页
+                        <button>跳转</button>
+                        <span>共32233页</span>
+                    </div>
+                </div>
+            </div></pre>
+    </div>
+</div>
+<div class="model model10">
+    <div class="model-title">公用模块十：公共分页（二）模块<button class="btn-green show-code">显示模块代码</button></div>
+    <div class="model-content">
+        <!-- 样式开始 -->
+        <div class="public-page">
+            <div class="page-block">
+                <span class="page-list page-left">&lt;</span>
+                <span class="page-list cur">1</span>
+                <span class="page-list">2</span>
+                <span class="page-list">3</span>
+                <span class="page-list">4</span>
+                <span class="page-list">5</span>
+                <span class="page-list">...</span>
+                <span class="page-list">322</span>
+                <span class="page-list page-right">&gt;</span>
+            </div>
+        </div>
+        <!-- 样式结束 -->
+        <pre class="model-code code-type-html">
+            <div class="public-page">
+                <div class="page-block">
+                    <span class="page-list page-left">&lt;</span>
+                    <span class="page-list cur">1</span>
+                    <span class="page-list">2</span>
+                    <span class="page-list">3</span>
+                    <span class="page-list">4</span>
+                    <span class="page-list">5</span>
+                    <span class="page-list">...</span>
+                    <span class="page-list">322</span>
+                    <span class="page-list page-right">&gt;</span>
+                </div>
+            </div></pre>
+    </div>
+</div>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/jquery.snippet.js"></script>
+<script src="js/publicUnits.js"></script>
+<script>
+;(function(){
+    $(document).ready(function(){
+        var $model = $('.model');
+        $model.each(function(){
+            var $this = $(this);
+            var $modelCode = $this.find('.model-code');
+            if($modelCode.hasClass('code-type-html')){
+                var html = $modelCode.html().replace(/\</g,"&lt;");
+                $modelCode.html(html).snippet("html", { 
+                    style: 'peachpuff',
+                    collapse: false,
+                    menu: false,
+                    startCollapsed: false,
+                });
+            }
+            var swit = false;
+            var $btn = $this.find('.model-title .show-code');
+            $btn.on('click', function(){
+                var that = $(this);
+                if(!swit){
+                    $modelCode.stop().slideDown('fast', function() {
+                        that.text('隐藏模块代码');
+                    });
+                    swit = true;
+                }else{
+                    $modelCode.stop().slideUp('fast', function() {
+                        that.text('显示模块代码');
+                    });
+                    swit = false;
+                }
+            });
+        });
+        $('select').changeSelect();
+        $('input[type="radio"]').changeRadio({
+            initSrc: 'images/publicUnits/public-radio-icon.png',
+            curSrc: 'images/publicUnits/public-radio-cur.png',
+        });
+        $('input[type="checkbox"]').changeCheckbox();
+    });
+})();
+</script>
+</body>
+</html>

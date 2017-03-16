@@ -1,0 +1,806 @@
+﻿@charset "utf-8";
+/* 公共设置 */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.ta-c {
+    text-align: center;
+}
+.public-login-block:after {
+    display: block;
+    content: '';
+    clear: both;
+    overflow: hidden;
+}
+/* 公共组件 */
+/* 公共按钮样式 */
+/* 按钮标签、普通、重置、提交 */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+button,
+.btn,
+.btn-reset,
+.btn-sub {
+    display: inline-block;
+    padding: 0 20px;
+    height: 28px;
+    line-height: 26px;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+/* 修改、新增、删除、编辑、搜索、无效、文件、不发布、发布、导入、导出、预览、退出、保存、生成二维码、证件、文档 */
+.btn-modify,
+.btn-add,
+.btn-delete,
+.btn-edit,
+.btn-seek,
+.btn-void,
+.btn-file,
+.btn-nopost,
+.btn-post,
+.btn-import,
+.btn-export,
+.btn-preview,
+.btn-signup,
+.btn-keep,
+.btn-makecode,
+.btn-card,
+.btn-doc,
+.btn-refresh,
+.btn-fit,
+.btn-rote,
+.btn-range,
+.btn-up, 
+.btn-increase,
+.btn-eyes,
+.btn-uppic {
+    display: inline-block;
+    padding: 0 14px 0 34px;
+    height: 28px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s;
+    box-sizing: border-box;
+}
+/* 颜色按钮 */
+.btn-white,
+.btn-blue,
+.btn-green,
+.btn-gray,
+.btn-red {
+    display: inline-block;
+    padding: 0 20px;
+    height: 28px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s;
+    box-sizing: border-box;
+}
+.btn-white {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    color: #333;
+    box-sizing: border-box;
+}
+.btn-blue {
+    background-color: #188eee;
+    border: 1px solid #0ae;
+    color: #fff;
+    box-sizing: border-box;
+}
+.btn-green {
+    background-color: #2cd49c;
+    border: 1px solid #24c39c;
+    color: #fff;
+    box-sizing: border-box;
+}
+.btn-gray {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    color: #333;
+    box-sizing: border-box;
+}
+.btn-red {
+    background-color: #c40000;
+    border: 1px solid #bb0101;
+    color: #fff;
+    box-sizing: border-box;
+}
+.btn-blue:hover {
+    background-color: #0ae;
+    box-shadow: 0 0 3px #0ae;
+}
+.btn-green:hover {
+    background-color: #24c39c;
+    box-shadow: 0 0 3px #24c39c;
+}
+.btn-red:hover {
+    background-color: #bb0101;
+    box-shadow: 0 0 3px #bb0101;
+}
+.btn-reset {
+    background-color: #fff;
+    color: #188eee;
+    border: 1px solid #188eee;
+}
+.btn-sub {
+    background-color: #188eee;
+    color: #fff;
+    border: 1px solid #188eee;
+}
+.btn-modify {
+    background: url('../images/publicUnits/modify_icon.png') no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-add {
+    background: url('../images/publicUnits/add_icon.png') no-repeat 12px center #5ebcfe;
+    border: 1px solid #5ebcfe;
+    color: #fff;
+}
+.btn-delete {
+    background: url('../images/publicUnits/delete-icon.png') no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-edit {
+    background: url('../images/publicUnits/edit-icon.png') no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-seek {
+    background: url('../images/publicUnits/seek-icon.png') no-repeat 12px center #188eee;
+    border: 1px solid #188eee;
+    color: #fff;
+}
+.btn-makecode {
+    background: url('../images/publicUnits/code-icon.png') no-repeat 11px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-void {
+    background: url('../images/publicUnits/void-icon.png') no-repeat 12px center #188eee;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    color: #333;
+}
+.btn-file {
+    background: url('../images/publicUnits/file-icon.png') no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-nopost {
+    background: url('../images/publicUnits/nopost-icon.png') no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-post {
+    background: url('../images/publicUnits/post-icon.png') no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-import {
+    background: url(../images/publicUnits/import-icon.png) no-repeat 12px center #2bd59b;
+    border: 1px solid #2bd59b;
+    color: #fff;
+}
+.btn-export {
+    background: url(../images/publicUnits/export-icon.png) no-repeat 12px center #2bd59b;
+    border: 1px solid #2bd59b;
+    color: #fff;
+}
+.btn-preview {
+    background: url(../images/publicUnits/preview-icon.png) no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-signup {
+    background: url(../images/publicUnits/signup-icon.png) no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-keep {
+    background: url(../images/publicUnits/keep-icon.png) no-repeat 12px center #5ebcfe;
+    border: 1px solid #4dadfe;
+    color: #fff;
+}
+.btn-card {
+    background: url(../images/publicUnits/card-icon.png) no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-doc {
+    background: url(../images/publicUnits/doc-icon.png) no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-paper {
+    background: url('../images/exam-management/paper-icon.png') no-repeat 10px  8px #fff ;
+    border: 1px solid #bbb;
+    color: #000;
+    padding: 0 14px 0 30px;
+}
+.btn-refresh {
+    background: url(../images/publicUnits/refresh-icon.png) no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-fit {
+    background: url(../images/publicUnits/fit-icon.png) no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-rote {
+    background: url(../images/publicUnits/rote-icon.png) no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-range {
+    background: url(../images/publicUnits/range-icon.png) no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-up {
+    background: url(../images/publicUnits/up-icon.png) no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-increase {
+    background: url(../images/publicUnits/add-btn-icon.png) no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-eyes {
+    background: url(../images/publicUnits/eyes-btn-icon.png) no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-uppic {
+    background: url('../images/publicUnits/uppic-icon.png') no-repeat 12px center #fff;
+    border: 1px solid #bbb;
+}
+.btn-reset:hover,
+.btn-sub:hover,
+.btn-add:hover {
+    box-shadow: 0 0 3px #bddffb;
+}
+.btn-sub:hover,
+.btn-add:hover,
+.btn-seek:hover,
+.btn-keep:hover {
+    background-color: #0ae;
+    border: 1px solid #0ae;
+    box-shadow: 0 0 3px #0ae;
+}
+.btn:hover,
+.btn-delete:hover,
+.btn-edit:hover,
+.btn-void:hover,
+.btn-modify:hover,
+.btn-file:hover,
+.btn-nopost:hover,
+.btn-post:hover,
+.btn-preview:hover,
+.btn-signup:hover,
+.btn-makecode:hover,
+.btn-card:hover,
+.btn-doc:hover,
+.btn-white:hover,
+.btn-gray:hover,
+.btn-refresh:hover,
+.btn-fit:hover,
+.btn-rote:hover,
+.btn-range:hover,
+.btn-up:hover,
+.btn-increase:hover,
+.btn-eyes:hover,
+.btn-uppic:hover {
+    box-shadow: 0 0 3px #ccc;
+}
+.btn-import:hover,
+.btn-export:hover {
+    background-color: #30b98a;
+    border: 1px solid #30b98a;
+    box-shadow: 0 0 3px #30b98a;
+}
+.btn-paper:hover {
+    border: 1px solid #c7c2c2;
+    box-shadow: 0 0 3px #c7c2c2;
+}
+button.disable {
+    opacity: .6;
+    filter: alpha(opacity=60);
+    box-shadow: 0 0 0 !important;
+    cursor: no-drop;
+}
+/* 分页样式 */
+.public-page,
+.public-page-2,
+.public-page *,
+.public-page-2 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.public-page,
+.public-page-2 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 34px;
+    text-align: center;
+    clear: both;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.public-page .page-block {
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    clear: both;
+}
+.public-page .page-list {
+    display: block;
+    float: left;
+    margin-left: -1px;
+    width: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    transition: .3s;
+}
+.public-page .page-list:hover,
+.public-page .page-block .cur {
+    border: 1px solid #188eee;
+    background-color: #188eee;
+    color: #fff;
+}
+.public-page .page-left {
+    border-radius: 4px 0 0 4px;
+}
+.public-page .page-right {
+    border-radius: 0 4px 4px 0;
+}
+/* 分页样式2 */
+.public-page-2 {
+    padding-left: 200px;
+    text-align: right;
+}
+.public-page-2 .list-prompt{
+    float: left;
+    margin-left: -200px;
+    width: 200px;
+    height: 100%;
+    line-height: 22px;
+    text-align: left;
+    font-size: 14px;
+}
+.public-page-2 .list-prompt span {
+    color: #188eee;
+}
+.public-page-2 .page-block {
+    margin-right: 30px;
+}
+.public-page-2 input[type="text"] {
+    width: 48px;
+    padding: 0 4px;
+    height: 22px;
+    margin: 0 4px;
+    font-size: 12px;
+}
+.public-page-2 button {
+    width: 46px;
+    height: 22px;
+    margin: 0 20px 0 10px;
+    line-height: 22px;
+    padding: 0;
+    background-color: #188eee;
+    color: #fff;
+}
+.public-page-2 .page-block {
+    display: inline-block;
+}
+.public-page-2 .pago-prompt {
+    display: inline-block;
+}
+.public-page-2 .page-list {
+    padding: 0 5px;
+    line-height: 22px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    transition: .3s;
+}
+.public-page-2 .page-list:hover,
+.public-page-2 .page-list.cur {
+    background-color: #188eee;
+    color: #fff;
+}
+.public-page-3 {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.public-page-3 .share-page {
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    height: 30px;
+    line-height: 0;
+}
+.public-page-3 span,
+.public-page-3 .page-list,
+.public-page-3 .page-go {
+    float: left;
+    display: inline-block;
+    line-height: 28px;
+    font-size: 12px;
+}
+.public-page-3 .page-list {
+    margin-right: 30px;
+}
+.public-page-3 em {
+    float: left;
+    display: inline-block;
+    width: 10px;
+    height: 30px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.public-page-3 .page-go {
+    margin: 0 8px;
+    line-height: 28px;
+}
+.public-page-3 input[type="text"] {
+    float: left;
+    margin-top: 10px;
+    font-size: 12px;
+    width: 35px;
+    height: 20px;
+    line-height: 18px;
+    background-color: #fff;
+    margin: 4px;
+}
+.public-page-3 em.page-first {
+    background: url('../images/publicUnits/page-first-icon.png') no-repeat center;
+}
+.public-page-3 em.page-prev {
+    background: url('../images/publicUnits/page-prev-icon.png') no-repeat center;
+}
+.public-page-3 em.page-next {
+    background: url('../images/publicUnits/page-next-icon.png') no-repeat center;
+}
+.public-page-3 em.page-last {
+    background: url('../images/publicUnits/page-last-icon.png') no-repeat center;
+}
+
+/* 用户个人中心 */
+.public-person {
+    display: inline-block;
+    position: relative;
+}
+.public-person .user-block {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+}
+.public-person .user-photo {
+    display: block;
+    float: left;
+    width: 42px;
+    height: 42px;
+    margin-top: 9px;
+    border-radius: 22px;
+}
+.public-person .usename {
+    float: left;
+    height: 60px;
+    padding: 0 24px 0 12px;
+    line-height: 60px;
+    font-size: 14px;
+    color: #fdf2e3;
+    text-decoration: none;
+}
+.public-person .user-block em {
+    display: block;
+    float: left;
+    width: 9px;
+    height: 60px;
+    background: url('../images/publicUnits/userinfo_btn.png') no-repeat center;
+}
+.public-person .public-info {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    z-index: 9999;
+    display: none;
+}
+.public-person .info-icon {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 10px;
+    height: 6px;
+    z-index: 10;
+}
+.public-person .info-list {
+    border: 1px solid #d1d8df;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: -1px;
+}
+.public-person .info-list li {
+    display: block;
+    clear: both;
+    position: relative;
+    padding: 0px 10px;
+    z-index: 1;
+}
+.public-person .info-list li:last-child a {
+    border: 0;
+}
+.public-person .info-list a {
+    display: block;
+    padding: 6px 10px;
+    border-bottom: 1px solid #d1d8df;
+    font-size: 14px;
+}
+
+/* 公共登录模块 */
+.public-login-block {
+    background-color: #fff;
+    padding: 18px;
+}
+.public-login-block .title {
+    display: block;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    color: #0ae;
+    font-size: 18px;
+}
+.public-username,
+.public-password {
+    position: relative;
+    width: 100%;
+    margin: 16px 0;
+    padding-left: 42px;
+    height: 38px;
+    border: 1px solid #bbb;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.public-username em,
+.public-password em {
+    float: left;
+    margin-left: -42px;
+    display: block;
+    width: 42px;
+    height: 38px;
+}
+.public-username em {
+    background: url('../images/publicUnits/username-icon.png') no-repeat center #ddd;
+}
+.public-password em {
+    background: url('../images/publicUnits/password-icon.png') no-repeat center #ddd;
+}
+.public-username input.username,
+.public-password input.password {
+    float: left;
+    width: 100%;
+    height: 36px;
+    line-height: 28px;
+    padding: 3px 6px;
+    border: 0;
+}
+.public-code {
+    position: relative;
+    width: 100%;
+    height: 36px;
+    padding-right: 118px;
+    overflow: hidden;
+}
+.public-code .code {
+    float: left;
+    width: 100%;
+    height: 36px;
+    line-height: 28px;
+    padding: 3px 6px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+.public-code .code-img {
+    float: right;
+    margin-right: -118px;
+    width: 109px;
+    height: 36px;
+}
+.public-submit-btn {
+    position: relative;
+    width: 100%;
+    height: 36px;
+    margin: 16px 0 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #015da2;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+.public-submit-btn:hover {
+    box-shadow: 0 0 5px #bddffb;
+    background-color: #026ab7;
+}
+.public-login-block .forget {
+    float: right;
+    color: #015da2;
+    font-size: 16px;
+}
+
+/* 通用下拉菜单 */
+.public-select,
+.public-select * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.public-select {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+}
+.public-select .select-text {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-right: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    overflow: hidden;
+}
+.public-select .select-input {
+    float: left;
+    display: inline-block;
+    position: relative;
+    padding: 0 4px;
+    width: 100%;
+    overflow: hidden;
+}
+.public-select .select-btn {
+    float: right;
+    display: inline-block;
+    position: relative;
+    margin-right: -30px;
+    width: 30px;
+    background: url('../images/publicUnits/select-defaute-btn.png') no-repeat center;
+    cursor: pointer;
+}
+.public-select .select-options {
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.public-select .select-options li {
+    line-height: 24px;
+    padding: 0 4px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.public-select .select-options li:hover {
+    background-color: #ddd;
+}
+
+/* 通用多选框样式 */
+.public-checkbox {
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    overflow: hidden;
+    cursor: default;
+}
+.public-checkbox-choose {
+    background: url('../images/publicUnits/checkbox-choose-icon.png') no-repeat center #0ae;
+}
+
+/* 通用tab */
+.public-tab,
+.public-tab-lable,
+.public-tab-content {
+    display: block;
+}
+
+
+/* 默认卷帘下拉 */
+.public-rolle {
+    display: block;
+    position: absolute;
+    margin: 30px auto 0;
+    text-align: center;
+    line-height: 6px;
+    z-index: 9999;
+    background-color: #fff;
+}
+.public-rolle .rolle-icon {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 6px;
+    z-index: 1;
+}
+.public-rolle .rolle-list {
+    position: relative;
+    top: -1px;
+    padding: 4px 10px;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0 0 3px #ccc;
+}
+.public-rolle .rolle-list li {
+    border-top:1px solid #e2e2e2;
+    padding: 0 6px;
+    height: 31px;
+    text-align: left;
+}
+.public-rolle .rolle-list li:first-child {
+    border-top: 0;
+}
+.public-rolle .rolle-list a {
+    line-height: 32px;
+    text-decoration: none;
+}
+
+/* 通用左右滚动 */
+.public-roll-left,
+.public-roll-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -23px;
+    width: 32px;
+    height: 46px;
+    z-index: 9999;
+    cursor: pointer;
+}
+.public-roll-left {
+    left: 0;
+    background: url('../images/publicUnits/public-roll-left.png') no-repeat 0 0;
+}
+.public-roll-right {
+    right: 0;
+    background: url('../images/publicUnits/public-roll-right.png') no-repeat 0 0;
+}
+.public-roll-left:hover,
+.public-roll-right:hover {
+    background-position: -32px 0;
+}
